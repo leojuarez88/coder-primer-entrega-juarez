@@ -6,17 +6,17 @@ import CartWidget from "../CartWidget/CartWidget";
 const NavBar = () => {
   return (
     <Navbar bg="dark" variant="dark">
-      <Container>
+      <Container className="m-2 p-1">
         <Navbar.Brand href="Nombre-empresa">Light-Vel</Navbar.Brand>
-        <Nav className="me-auto">
-          <Nav.Link href="#home">Inicio</Nav.Link>
-          <Nav.Link href="#features">Veladores</Nav.Link>
-          <Nav.Link href="#pricing">lamparas</Nav.Link>
+        <Nav className="me-auto m-2">
+          <Nav.Link href="Lampara-pared">Lámparas de Pared</Nav.Link>
+          <Nav.Link href="Veladores">Veladores</Nav.Link>
+          <Nav.Link href="BarraIluminación">Barra de iluminación</Nav.Link>
         </Nav>
-        <CartWidget/>
+        <CartWidget />
       </Container>
     </Navbar>
-  );
-};
+  )
+}
 
-export default NavBar;
+export default NavBar 
