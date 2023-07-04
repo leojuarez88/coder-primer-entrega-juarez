@@ -9,12 +9,13 @@ const NavBar = () => {
     <Navbar bg="dark" variant="dark">
       <Container className="m-2 p-1">
         <Link to="/">
-          <Navbar.Brand href="Nombre-empresa">Light-Vel</Navbar.Brand>
+          <Navbar.Brand className="m-2 p-1" href="Nombre-empresa">Light-Vel</Navbar.Brand>
         </Link>
         <Nav className="me-auto m-2">
-          <NavLink to="/categoria/2" href="Lampara-pared">Lámparas de Pared</NavLink>
-          <NavLink to="/categoria/3" href="Veladores">Veladores</NavLink>
-          <NavLink to="/categoria/3" href="BarraIluminación">Barra de iluminación</NavLink>
+          <NavLink className="m-2 p-1" to="/categoria/1" href="Veladores">Veladores</NavLink>
+          <NavLink className="m-2 p-1" to="/categoria/2" href="LamparaPared">Lámparas de Pared</NavLink>
+          <NavLink className="m-2 p-1" to="/categoria/3" href="LamparaExterior">Lamparas Exterior</NavLink>
+          <NavLink className="m-2 p-1" to="/categoria/4" href="LamparaNordica">Lamparas Nordicas</NavLink>
         </Nav>
         <CartWidget />
       </Container>
